@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="https://topchat.im/startup">A标签唤起</a></button>
+    <button class="local">Window.location.href</button>
+    <button class="local1">Window.open</button>
+    <p>iframe</p>
+    <button><iframe src="https://topchat.im/startup" frameborder="0">iframe</iframe></button>
+</body>
+<script>
+document.querySelector('.local').addEventListener('click' , () => {
+    window.location.href = 'https://topchat.im/startup'
+})
+document.querySelector('.local1').addEventListener('click' , () => {
+    window.open('https://topchat.im/startup')
+})
+</script>
+</html>
